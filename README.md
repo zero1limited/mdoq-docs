@@ -1,1 +1,3 @@
-# home page
+## Help!!!
+
+`bundle exec jekyll serve --livereload`  
