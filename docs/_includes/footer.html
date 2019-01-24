@@ -1,4 +1,11 @@
-<footer class="site-footer h-card">
+<footer class="bg-dark">
+  <p class="text-light">{{ site.footer.copyright | escape }}</p>
+  {%- include social.html -%}
+  <p><a href="#">Back to top</a></p>
+</footer>
+
+
+<!-- <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
@@ -22,7 +29,7 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+
       </div>
 
       <div class="footer-col footer-col-3">
@@ -32,4 +39,4 @@
 
   </div>
 
-</footer>
+</footer> -->

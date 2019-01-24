@@ -14,14 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Mdoq
-email: support@zero1.co.uk
+email: sales@mdoq.io
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.mdoq.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
 github_username:  jekyll
 error_mode: strict
 
@@ -42,3 +41,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# social stuff
+twitter_username: MDOQ_UK
+youtube:
+  username: MDOQ
+  url: channel/UCfxjy1fBuE09r2XuVet3kaQ/featured
+
+# footer stuff
+footer:
+  copyright: "© 2018 ZERO-1 Limited. MDOQ is a trade mark of ZERO-1 Registered in England No 03837629 | Registered address: West Road House, West Road, Buxton, United Kingdom, SK17 6HF"

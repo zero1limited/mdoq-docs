@@ -1,9 +1,10 @@
-- title: Quick Start Tutorials
-  description: Hit the ground developing, using our video tutorials
-  link: /quick-start
-- title: Full Documentation
-  description: View the full documentation.
-  link: /user-docs
-- title: Api Documentation
-  description: Wanting to integrate with MDOQ? View the full api document.
-  link: /api-docs
+quick_links:
+  - title: Quick Start Tutorials
+    description: Hit the ground developing, using our video tutorials
+    link: /tutorials.html
+  - title: Full Documentation
+    description: View the full documentation.
+    link: /user-docs
+  - title: Api Documentation
+    description: Wanting to integrate with MDOQ? View the full api document.
+    link: /api-docs
