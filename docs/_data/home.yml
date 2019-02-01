@@ -4,7 +4,7 @@ quick_links:
     link: /tutorials.html
   - title: Full Documentation
     description: View the full documentation.
-    link: /user-docs
+    link: /documentation.html
   - title: Api Documentation
     description: Wanting to integrate with MDOQ? View the full api document.
-    link: /api-docs
+    link: /api-documentation.html
