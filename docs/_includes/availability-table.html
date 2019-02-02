@@ -1,0 +1,29 @@
+{% if page.availability %}
+
+*Availability*
+<table class="table availability">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Platform</th>
+        <th scope="col">Live</th>
+        <th scope="col">Staging</th>
+        <th scope="col">Development</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Magento 1</th>
+        <td {% if page.availability.m1.live == true %}class="ticked"{% endif %}></td>
+        <td {% if page.availability.m1.staging == true %}class="ticked"{% endif %}></td>
+        <td {% if page.availability.m1.development == true %}class="ticked"{% endif %}></td>
+    </tr>
+    <tr>
+        <th scope="row">Magento 2</th>
+        <td {% if page.availability.m2.live == true %}class="ticked"{% endif %}></td>
+        <td {% if page.availability.m2.staging == true %}class="ticked"{% endif %}></td>
+        <td {% if page.availability.m2.development == true %}class="ticked"{% endif %}></td>
+    </tr>
+    </tbody>
+</table>
+
+{% endif %}
