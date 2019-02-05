@@ -1,6 +1,33 @@
-.navbar {background:red!important;}
 section.homepage-banner {
-  background-image: url('/assets/img/banner_1.png');
-  background-position: center;
-  background-size: cover
+  //background-image: url('/assets/img/banner_1.png');
+  //background-position: center;
+  //background-size: cover
+}
+.jumbotron {
+  border-radius: 0;
+}
+footer.site-footer {
+  font-size: 14px;
+  background: #1d1d1d;
+  color: #a4a4a4;
+}
+.socials {
+  text-align: center;
+}
+.socials a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #a4a4a4;
+  border-radius: 25px;
+}
+.socials a span {
+  overflow: hidden;
+  text-indent: -999em;
+}
+.socials a svg {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  filter: invert(100%);
 }
