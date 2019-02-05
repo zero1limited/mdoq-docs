@@ -8,6 +8,7 @@ section: instance
 # {{ page.title }}
 
 The github dialog is designed to enable automation of a few simple git tasks commonly carried out by a developer.  
+<img src="/assets/img/github_dialog.jpg" alt="Mdoq Github Dialog" />
 
 - [Clone Links](#clone-links)
 - [View Branch](#view-branch)
@@ -15,8 +16,6 @@ The github dialog is designed to enable automation of a few simple git tasks com
 - [Git Push](#git-push)
 - [Merging In Branches](#merging-in-branches)
 - [Common Issues](#common-issues)
-
-<img src="/assets/img/github_dialog.jpg" alt="Mdoq Github Dialog" />
 
 ## Clone Links
 These are the cli commands to clone the branch your instance is on, should you wish to get a local copy of the code base.
