@@ -12,15 +12,17 @@ The github dialog is designed to enable automation of a few simple git tasks com
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
+        
 - [Clone Links](#clone-links)
 - [View Branch](#view-branch)
 - [Git Pull](#git-pull)
 - [Git Push](#git-push)
 - [Merging In Branches](#merging-in-branches)
 - [Common Issues](#common-issues)
+
         </div>
         <div class="col-sm-6">
-            <img src="/assets/github_dialog.jpg" alt="Mdoq Github Dialog" />
+            <img src="/assets/img/github_dialog.jpg" alt="Mdoq Github Dialog" />
         </div>
     </div>
 </div>
