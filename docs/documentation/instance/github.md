@@ -8,6 +8,7 @@ section: instance
 # {{ page.title }}
 
 The github dialog is designed to enable automation of a few simple git tasks commonly carried out by a developer.  
+
 <img src="/assets/img/github_dialog.jpg" alt="Mdoq Github Dialog" />
 
 - [Clone Links](#clone-links)
