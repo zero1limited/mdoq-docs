@@ -1,9 +1,9 @@
 <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content">
-        <ul class="list-group-flush">
+        <ul class="list-group left-nav">
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/tutorials.html' %}active{% endif %}"><a href="/tutorials.html">Tutorials</a></span>
-                <ul class="list-group-flush {% unless page.url contains '/tutorials' %}collapse{% endunless %}">
+                <ul class="list-group {% unless page.url contains '/tutorials' %}collapse{% endunless %}">
                     {% for p in site.html_pages %}
                         {% if p.url contains '/tutorials/' %}
                     <li class="list-group-item {% if p.url == page.url %}active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
@@ -13,19 +13,19 @@
             </li>
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/documentation.html' %}active{% endif %}"><a href="/documentation.html">Documentation</a></span>
-                <ul class="list-group-flush {% unless page.url contains '/documentation' %}collapse{% endunless %}">
+                <ul class="list-group {% unless page.url contains '/documentation' %}collapse{% endunless %}">
                     {% for p in site.html_pages %}
                         {% if p.section == 'documentation' %}
                     <li class="list-group-item">
                         <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
                             {% if p.sub_section %}
-                        <ul class="list-group-flush section-{{ p.sub_section }}">
+                        <ul class="list-group section-{{ p.sub_section }}">
                                 {% for subPage in site.html_pages %}
                                     {% if subPage.section == p.sub_section %}
                             <li class="list-group-item">
                                 <a href="{{ subPage.url }}" {% if subPage.url == page.url %}class="active"{% endif %}>{{ subPage.title }}</a>
                                         {% if subPage.sub_section %}
-                                <ul class="list-group-flush section-{{ subPage.sub_section }}">
+                                <ul class="list-group section-{{ subPage.sub_section }}">
                                             {% for subSubPage in site.html_pages %}
                                                 {% if subSubPage.section == subPage.sub_section %}
                                     <li class="list-group-item">
@@ -47,7 +47,7 @@
             </li>
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/api-documentation.html' %}active{% endif %}"><a href="/api-documentation.html">Api Documentation</a></span>
-                <ul class="list-group-flush {% unless page.url contains '/api-documentation' %}collapse{% endunless %}">
+                <ul class="list-group {% unless page.url contains '/api-documentation' %}collapse{% endunless %}">
                     {% for p in site.html_pages %}
                         {% if p.url contains '/api-documentation/' %}
                     <li class="list-group-item"><a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>
