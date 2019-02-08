@@ -2,18 +2,30 @@
     <div class="sidebar-content">
         <ul class="list-group left-nav">
             <li class="list-group-item">
-                <span class="sub-menu-title {% if p.url == '/tutorials.html' %}active{% endif %}"><a href="/tutorials.html">Tutorials</a></span>
-                <ul class="list-group {% unless page.url contains '/tutorials' %}collapse{% endunless %}">
-                    {% for p in site.html_pages %}
-                        {% if p.url contains '/tutorials/' %}
-                    <li class="list-group-item {% if p.url == page.url %}active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                <span class="sub-menu-title {% if p.url == '/tutorials.html' %}active{% endif %}">
+                    <a href="/tutorials.html">Tutorials</a>
+                    {% unless page.url contains '/tutorials' %}
+                        <span class="expander" data-toggle="collapse" href="#tutorials-nav" aria-controls="tutorials-nav"></span>
+                    {% endunless %}
+                </span>
+                <div class="{% unless page.url contains '/tutorials' %}collapse{% endunless %}" id="tutorials-nav">
+                    <ul class="list-group">
+                        {% for p in site.html_pages %}
+                            {% if p.url contains '/tutorials/' %}
+                        <li class="list-group-item {% if p.url == page.url %}active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </li>
             <li class="list-group-item">
-                <span class="sub-menu-title {% if p.url == '/documentation.html' %}active{% endif %}"><a href="/documentation.html">Documentation</a></span>
-                <ul class="list-group {% unless page.url contains '/documentation' %}collapse{% endunless %}">
+                <span class="sub-menu-title {% if p.url == '/documentation.html' %}active{% endif %}">
+                    <a href="/documentation.html">Documentation</a>
+                    {% unless page.url contains '/documentation' %}
+                        <span class="expander" data-toggle="collapse" href="#documentation-nav" aria-controls="documentation-nav"></span>
+                    {% endunless %}
+                </span>
+                <ul class="list-group {% unless page.url contains '/documentation' %}collapse{% endunless %}" id="documentation-nav">
                     {% for p in site.html_pages %}
                         {% if p.section == 'documentation' %}
                     <li class="list-group-item">
@@ -46,8 +58,13 @@
                 </ul>
             </li>
             <li class="list-group-item">
-                <span class="sub-menu-title {% if p.url == '/api-documentation.html' %}active{% endif %}"><a href="/api-documentation.html">Api Documentation</a></span>
-                <ul class="list-group {% unless page.url contains '/api-documentation' %}collapse{% endunless %}">
+                <span class="sub-menu-title {% if p.url == '/api-documentation.html' %}active{% endif %}">
+                    <a href="/api-documentation.html">Api Documentation</a>
+                    {% unless page.url contains '/api-documentation' %}
+                        <span class="expander" data-toggle="collapse" href="#api-nav" aria-controls="api-nav"></span>
+                    {% endunless %}
+                </span>
+                <ul class="list-group {% unless page.url contains '/api-documentation' %}collapse{% endunless %}" id="api-nav">
                     {% for p in site.html_pages %}
                         {% if p.url contains '/api-documentation/' %}
                     <li class="list-group-item"><a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>
