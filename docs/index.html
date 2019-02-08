@@ -12,14 +12,14 @@ description:
 </section>
 
   <div class="container">
-    <div class="row">
+    <div class="row text-center">
       {% for section in site.data.home.quick_links %}
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
-        <h2>{{ section.title | capitalize }}</h2>
-        <p>{{ section.description | capitalize }}</p>
-        <p><a class="btn btn-secondary" href="{{ section.link }}" role="button">Start &raquo;</a></p>
-      </div>
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
+          <h2>{{ section.title | capitalize }}</h2>
+          <p>{{ section.description | capitalize }}</p>
+          <p><a class="btn btn-secondary" href="{{ section.link }}" role="button">Start &raquo;</a></p>
+        </div>
       {% endfor %}
     </div>
   </div>
