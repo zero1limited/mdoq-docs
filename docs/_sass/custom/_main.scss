@@ -122,3 +122,44 @@ footer.site-footer #back-to-top {
   background: $primary;
   color: #fff;
 }
+.list-group .list-group-item a {
+  display: block;
+}
+.list-group .list-group-item a.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+.list-group .list-group {
+  margin: 0.5em 0;
+  border: 0;
+}
+.list-group .list-group .list-group-item {
+  background: transparent;
+  padding: 0.4rem 0;
+  border: 0;
+}
+.list-group .list-group .list-group {
+  margin-bottom: 0;
+}
+.list-group .list-group .list-group .list-group-item a {
+  padding-left: 1rem;
+  position: relative;
+}
+.list-group .list-group .list-group .list-group-item a:before {
+  content: '\f105';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: inherit;
+
+  color: #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list-group .list-group .list-group .list-group .list-group-item a {
+  padding-left: 2.5rem;
+}
+.list-group .list-group .list-group .list-group .list-group-item a:before {
+  left: 1.5rem;
+}
