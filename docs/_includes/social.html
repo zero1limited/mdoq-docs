@@ -1,29 +1,21 @@
-
-  <div class="socials">
-    {%- if site.twitter_username -%}
+<div class="socials text-center pb-3">
+  {%- if site.twitter_username -%}
     <a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="twitter">
-      <svg class="svg-icon">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
-      </svg>
-      <span class="username">{{ site.twitter_username| escape }}</span>
+      <i class="fab fa-twitter"></i>
     </a>
-    {%- endif -%}
+  {%- endif -%}
 
-    {%- if site.youtube.username -%}
+  {%- if site.youtube.username -%}
     <a href="https://youtube.com/{{ site.youtube.url | cgi_escape | escape }}" class="youtube">
-      <svg class="svg-icon">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use>
-      </svg>
-      <span class="username">{{ site.youtube.username | escape }}</span>
+      <i class="fab fa-youtube"></i>
     </a>
-    {%- endif -%}
+  {%- endif -%}
 
+  <a href="mailto:{{ site.email | escape }}" class="email">
+    <i class="fas fa-envelope"></i>
+  </a>
 
-    <a href="mailto:{{ site.email | escape }}" class="email">
-      <span>{{ site.email }}</span>
-    </a>
-
-  </div>
+</div>
 
   <!--
   <ul class="social-media-list">

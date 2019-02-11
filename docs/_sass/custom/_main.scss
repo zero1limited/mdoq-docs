@@ -105,23 +105,20 @@ footer.site-footer #back-to-top {
     padding-top: 100px;
   }
 }
-.socials {
-  text-align: center;
-}
+.socials {}
 .socials a {
   display: inline-block;
   width: 24px;
   height: 24px;
+  line-height: 24px;
+  margin: 0 2px;
+
   border: 1px solid #a4a4a4;
   border-radius: 25px;
+  color: #a4a4a4;
 }
-.socials a span {
-  overflow: hidden;
-  text-indent: -999em;
-}
-.socials a svg {
-  width: 16px;
-  height: 16px;
-  margin: 0 auto;
-  filter: invert(100%);
+.socials a:hover {
+  border: 1px solid $primary;
+  background: $primary;
+  color: #fff;
 }
