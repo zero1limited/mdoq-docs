@@ -4,11 +4,9 @@
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/tutorials.html' %}active{% endif %}">
                     <a href="/tutorials.html">Tutorials</a>
-                    {% unless page.url contains '/tutorials' %}
-                        <span class="expander" data-toggle="collapse" href="#tutorials-nav" aria-controls="tutorials-nav"></span>
-                    {% endunless %}
+                    <span class="expander" data-toggle="collapse" href="#tutorials-nav" aria-controls="tutorials-nav" {% if page.url contains '/tutorials' %}aria-expanded="true"{% endif %}></span>
                 </span>
-                <div class="{% unless page.url contains '/tutorials' %}collapse{% endunless %}" id="tutorials-nav">
+                <div class="collapse {% if page.url contains '/tutorials' %}show{% endif %}" id="tutorials-nav">
                     <ul class="list-group">
                         {% for p in site.html_pages %}
                             {% if p.url contains '/tutorials/' %}
@@ -23,56 +21,56 @@
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/documentation.html' %}active{% endif %}">
                     <a href="/documentation.html">Documentation</a>
-                    {% unless page.url contains '/documentation' %}
-                        <span class="expander" data-toggle="collapse" href="#documentation-nav" aria-controls="documentation-nav"></span>
-                    {% endunless %}
+                    <span class="expander" data-toggle="collapse" href="#documentation-nav" aria-controls="documentation-nav" {% if page.url contains '/documentation' %}aria-expanded="true"{% endif %}></span>
                 </span>
-                <ul class="list-group {% unless page.url contains '/documentation' %}collapse{% endunless %}" id="documentation-nav">
-                    {% for p in site.html_pages %}
-                        {% if p.section == 'documentation' %}
-                    <li class="list-group-item">
-                        <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
-                            {% if p.sub_section %}
-                        <ul class="list-group section-{{ p.sub_section }}">
-                                {% for subPage in site.html_pages %}
-                                    {% if subPage.section == p.sub_section %}
-                            <li class="list-group-item">
-                                <a href="{{ subPage.url }}" {% if subPage.url == page.url %}class="active"{% endif %}>{{ subPage.title }}</a>
-                                        {% if subPage.sub_section %}
-                                <ul class="list-group section-{{ subPage.sub_section }}">
-                                            {% for subSubPage in site.html_pages %}
-                                                {% if subSubPage.section == subPage.sub_section %}
-                                    <li class="list-group-item">
-                                        <a href="{{ subSubPage.url }}" {% if subSubPage.url == page.url %}class="active"{% endif %}>{{ subSubPage.title }}</a>
-                                    </li>
-                                                {% endif %}
-                                            {% endfor %}
-                                </ul>
+                <div class="collapse {% if page.url contains '/documentation' %}show{% endif %}" id="documentation-nav">
+                    <ul class="list-group">
+                        {% for p in site.html_pages %}
+                            {% if p.section == 'documentation' %}
+                        <li class="list-group-item">
+                            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
+                                {% if p.sub_section %}
+                            <ul class="list-group section-{{ p.sub_section }}">
+                                    {% for subPage in site.html_pages %}
+                                        {% if subPage.section == p.sub_section %}
+                                <li class="list-group-item">
+                                    <a href="{{ subPage.url }}" {% if subPage.url == page.url %}class="active"{% endif %}>{{ subPage.title }}</a>
+                                            {% if subPage.sub_section %}
+                                    <ul class="list-group section-{{ subPage.sub_section }}">
+                                                {% for subSubPage in site.html_pages %}
+                                                    {% if subSubPage.section == subPage.sub_section %}
+                                        <li class="list-group-item">
+                                            <a href="{{ subSubPage.url }}" {% if subSubPage.url == page.url %}class="active"{% endif %}>{{ subSubPage.title }}</a>
+                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                    </ul>
+                                            {% endif %}
+                                </li>
                                         {% endif %}
-                            </li>
-                                    {% endif %}
-                                {% endfor %}
-                        </ul>
+                                    {% endfor %}
+                            </ul>
+                                {% endif %}
+                        </li>
                             {% endif %}
-                    </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </div>
             </li>
             <li class="list-group-item">
                 <span class="sub-menu-title {% if p.url == '/api-documentation.html' %}active{% endif %}">
                     <a href="/api-documentation.html">Api Documentation</a>
-                    {% unless page.url contains '/api-documentation' %}
-                        <span class="expander" data-toggle="collapse" href="#api-nav" aria-controls="api-nav"></span>
-                    {% endunless %}
+                    <span class="expander" data-toggle="collapse" href="#api-nav" aria-controls="api-nav" {% if page.url contains '/api-documentation' %}aria-expanded="true"{% endif %}></span>
                 </span>
-                <ul class="list-group {% unless page.url contains '/api-documentation' %}collapse{% endunless %}" id="api-nav">
-                    {% for p in site.html_pages %}
-                        {% if p.url contains '/api-documentation/' %}
-                    <li class="list-group-item"><a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                <div class="collapse {% if page.url contains '/api-documentation' %}show{% endif %}" id="api-nav">
+                    <ul class="list-group">
+                        {% for p in site.html_pages %}
+                            {% if p.url contains '/api-documentation/' %}
+                        <li class="list-group-item"><a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>
