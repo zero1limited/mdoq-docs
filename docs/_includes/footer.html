@@ -1,7 +1,8 @@
 <footer class="site-footer">
   <div class="container text-center">
-    <p class="copyright">{{ site.footer.copyright | escape }}</p>
+    <p class="copyright pt-4 pb-3">{{ site.footer.copyright | escape }}</p>
     {%- include social.html -%}
-    <p><a href="#">Back to top</a></p>
+
+    <a href="#top" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
   </div>
 </footer>

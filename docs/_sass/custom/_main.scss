@@ -76,6 +76,9 @@ section.homepage-banner {
 .left-nav .sub-menu-title .expander[aria-expanded="true"]:before {
   content: '-';
 }
+main[role="main"] {
+  //min-height: 75vh;
+}
 footer.site-footer {
   font-size: 14px;
   background: #1d1d1d;
@@ -83,7 +86,19 @@ footer.site-footer {
   padding-bottom: 1rem;
 }
 footer.site-footer .copyright {
+  border-top: 1px solid #363636;
+}
+footer.site-footer #back-to-top {
+  display: none;
+  background: #00b1cc;
+  color: #fff;
+  padding: 10px;
+  line-height: 1;
 
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 500;
 }
 @media only screen and (min-width:768px) {
   footer.site-footer {
