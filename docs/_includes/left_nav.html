@@ -25,7 +25,8 @@
                 </span>
                 <div class="collapse {% if page.url contains '/documentation' %}show{% endif %}" id="documentation-nav">
                     <ul class="list-group">
-                        {% for p in site.html_pages %}
+                        {% assign sortedHtmlPages = (site.html_pages | sort:"priority" | reverse) %}
+                        {% for p in sortedHtmlPages %}
                             {% if p.section == 'documentation' %}
                         <li class="list-group-item">
                             <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>

@@ -4,6 +4,7 @@ title: Instance
 description: An explanation of the Mdoq 'instance' concept and a brief overview
 section: documentation
 sub_section: instance
+priority: 100
 ---
 
 # {{ page.title }}
