@@ -6,4 +6,4 @@ section: instance
 ---
 
 # {{ page.title }}
-
+In Mdoqs eyes each instance is made up of multiple components, these components are pretty similar between M1 and M2 but

@@ -40,7 +40,7 @@ Because of their differing roles, each instance type has different actions and a
 ## Instance Components
 Instances are made up of many components, each component takes responsibility of it's own set of tasks needed to provide the full Mdoq functionality.  
 Each component has its own configuration, the configuration of all instances inherited from the live instance it is created from. Though this configuration can be modified as needed.  
-To read more about instance component see [here](/documentation/instance/support.html).
+To read more about instance components see [here](/documentation/instance/components.html).
 
 ## What Can I Do With An Instance
 The are many things you can do with an instance, once you have selected if from the left hand side of the Mdoq UI (it will be highlighted blue in the list), instance specific information and actions will be 
