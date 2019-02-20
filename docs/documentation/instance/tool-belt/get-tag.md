@@ -15,6 +15,6 @@ availability:
 ---
 
 # {{ page.title }}
-This job allows you to retrieve the tag the production site is on. 
+This job allows you to retrieve the git tag the production site is on. 
 
 {%- include availability-table.html -%}
