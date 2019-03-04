@@ -116,10 +116,37 @@ Again to change these limitations we could simply override the class in DI confi
 wouldn't change on a per environment basis.
 
 ## How can you change this in a per environment manner?
-Magento as a whole does adhere to point 3, it has a `env.php` file which as described [here](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/#manage-the-configuration)
-is intended for just such circumstances.  
-So we know we can change the class using DI config, and we can make the new class we make sensitive
- to values in environment config. To further this even more we could configure different logging 'stacks' 
- which can be determined bu
+This is quite an easy one, Magento as a whole does adhere to point 3, it has a `env.php` file which as described [here](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/#manage-the-configuration)
+is intended for just such circumstances.
+We can simply run a command like `TODO` and this would set us an environmentally scoped value.
 
-## Summary
+## The Plan
+With this information in mind, we have all the components needs to implement what I feel is a usable solution.
+To start with we will configure different logging 'stacks' by this I mean a different set of configured 
+handlers for monolog, i.e  
+The production stack
+- Log level should only be error and higher
+- Slack message on error
+- rotating logs
+- additional context variables
+  
+The non production stack:
+- Log level debug
+- single log file
+- additional context variables
+  
+These stacks will be defined in `app/etc/config.php`, we will then swap which stack is used with a value
+ in `app/etc/env.php` . This will mean we can source control the stacks, so if we suddenly stop getting 
+slack messages we know why. Whilst allowing us to toggle between them. In addition to this, I would like 
+to add additional context values, which come in extremely useful when debugging issues (explained below).
+
+## The Work
+1. First things first, I need somewhere to develop our new module. So I use [Mdoq](https://www.mdoq.io) to [create a new instance](https://docs.mdoq.io/tutorials/creating-a-new-instance.html) 
+  and a minute or so later I have a full working replica of a Magento site. (in this case our Acme site, used for general dev)
+  [insert image]
+2. To get a module in place quickly, we will use [Pestle](https://github.com/astorm/pestle/blob/master/README.md)
+  this is installed by default on [Mdoq](https://www.mdoq.io) so we can simply run: `pestle generate_module Zero1 CustomLogging 1.0.0`  
+  [insert image]
+3. Now we need to declare the environmental values we are going to use
+
+## The Result
