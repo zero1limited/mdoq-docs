@@ -9,14 +9,16 @@ To apply a patch you will need a instance. If you don't know how to roll up an i
 
 1. Select the required instance in the left pane
 2. Click MDOQ - Support - Code Editor
-
-open the composer JSON file and move these includes to the start & insert this into the 'extra' node
+3. Open the composer.json file
 
 Add these to "require"
+```
         "zero1limited/magento2-patches": "^1.0.0",
         "cweagans/composer-patches": "^1.6.5",
+```
 
 Add these to "extra"
+```
 "patches": {
             "magento/module-catalog": {
                 "2198-01": "vendor/zero1limited/magento2-patches/patches/PRODSECBUG-2198-2.2-CE.composer-2019-03-27-06-12-19-01.patch"
@@ -25,9 +27,9 @@ Add these to "extra"
                 "2198-02": "vendor/zero1limited/magento2-patches/patches/PRODSECBUG-2198-2.2-CE.composer-2019-03-27-06-12-19-02.patch"
             }
         }
-        
+```
 3. Click MDOQ - Support - SSH Web Console     
-composer update --lock --no-dev
+```composer update --lock --no-dev```
 
 
 
