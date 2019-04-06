@@ -28,9 +28,14 @@ Add these to "extra"
             }
         }
 ```
-3. Click MDOQ - Support - SSH Web Console     
+4. Click MDOQ - Support - SSH Web Console     
 ```composer update --lock --no-dev```
 
+5. MDOQ - Support - Github - Git Push
+Push only the composer.json & composer.lock files 
+and then recreate the instance.
 
+Done! Your Patch should now be applied check your 
+Github branch to ensure this.
 
-Done! Your Patch should now be applied check your Github branch to ensure this.
+You are now ready to Deploy!
