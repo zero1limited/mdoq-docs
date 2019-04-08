@@ -8,7 +8,7 @@ description: How to apply a patch to your Magento 2 store
 To apply a patch you will need a instance. If you don't know how to roll up an instance click [here](/tutorials/create-a-new-istance.html)
 
 1. Select the required instance in the left pane
-2. Click MDOQ - Support - SSH Web Console
+2. Click Support - SSH Web Console
 
 ```
 composer require zero1limited/magento2-patches
@@ -20,12 +20,9 @@ composer install
 ```
 
 
-3. MDOQ - Support - Github - Git Push
+3. Click Github - Git Push - Select only the composer.json, composer.lock & app/etc/config.php files
+4. Click Sync - Files - recreate the instance
 
+This should then re-run the composer install and apply the patches.
 
-Push only the composer.json & composer.lock files and then recreate the instance.
-
-Done! Your Patch should now be applied check your 
-Github branch to ensure this.
-
-You are now ready to Deploy!
+Done! You are now ready to Deploy!
