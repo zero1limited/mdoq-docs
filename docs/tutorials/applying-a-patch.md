@@ -31,6 +31,9 @@ https://github.com/zero1limited/magento2-patches/blob/master/patches.json
 
 With the patches.json open please search it for the name of the patch you have just applied as denoted in the above commands after the --patch=
 
+Please also find the version of Magento you are running by entering the SSH Web Console and typing `php bin/magento -V`
+
+When you have located the patch and your Magento version, you should be able to locate a base_dir value, use this to navigate to the relevant patch folder.
 
 
 
