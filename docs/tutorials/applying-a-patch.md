@@ -5,12 +5,12 @@ description: How to apply a patch to your Magento 2 store
 ---
 
 # {{ page.title }}
-To apply a patch you will need a instance. If you don't know how to roll up an instance click [here](/tutorials/create-a-new-istance.html)
+To apply a patch you will need a instance. If you don't know how to roll up an instance click [here]({{ site.baseurl }}{% link tutorials/creating-a-new-instance.md %})
 
 1. Select the required instance in the left pane
 2. Click Support - SSH Web Console
 
-```
+```sh
 composer require zero1limited/magento2-patches
 composer require cweagans/composer-patches:^1.6.5
 php bin/magento module:enable Zero1_Patches
