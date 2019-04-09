@@ -28,6 +28,6 @@ This should then re-run the composer install and apply the patches.
 
 In order to verify 100% that the patches have applied, you can check the log files in your instance. Pleaes review the animation below which illustrates one patch applied successfully and one patch failing. If you get 'Could not apply patch!' you will need to escalate your issue to a developer.
 
-(http://g.recordit.co/YOXdwAL20K.gif)
+![Easy patching Magento 2](http://g.recordit.co/YOXdwAL20K.gif)
 
 If you did not receive any patch errors, you are  ready to Deploy!
