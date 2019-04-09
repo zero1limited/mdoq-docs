@@ -13,7 +13,7 @@ This page explains what "instances" are, what they are made of and how they are 
 - [What Are "instances"](#what-are-instances)
 - [Instance Types](#instance-types)
 - [Instance Components](#instance-components)
-- [What Can I Do With An Instance](#what-can-do-with-an-instance)
+- [What Can I Do With An Instance](#what-can-i-do-with-an-instance)
 - [Common Questions](#common-questions)
 
 ## What Are Instances
@@ -61,7 +61,13 @@ Towards the top of the instance information will be the actions available for th
 - Support
   This dialog give access to useful set of tools, commonly required by a developer, see [here](/documentation/instance/support.html) for more information.
 - Delete
-  Click this will allow you to delete the instance, this cannot be undone, so please make sure you have everything you need from the instance before doing this.
+  Clicking this will allow you to delete the instance. When opening the dialog a couple of checks will start to run: 
+  - Check if this branch is ahead of master. (if this is the case, you may wish to keep your git branch, see below)  
+  - Check if there are any uncommitted changes.
+  You don't have to wait for these checks to complete, if you are sure you know what you are doing.  
+  In addition to the checks, you will also get the option to "Skip Git branch deletion". This allows you to delete the instance but keep the work done, useful if you are at your instance limit. 
+  If you want to get your instance back you can simply create a new instance with the same ticket number, and the original git branch will be used. It is worth noting that any unscripted database changes *will* be lost if you do this.    
+  Deleting an instance cannot be undone.
   
   
 Underneath the actions are the logs for the instance, this is a history of all Mdoq activity carried out on the instance.
