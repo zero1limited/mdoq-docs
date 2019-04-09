@@ -10,7 +10,7 @@ To apply a patch you will need a instance. If you don't know how to roll up an i
 1. Select the required instance in the left pane
 2. Click Support - SSH Web Console
 
-```sh
+```bash
 composer require zero1limited/magento2-patches
 composer require cweagans/composer-patches:^1.6.5
 php bin/magento module:enable Zero1_Patches
