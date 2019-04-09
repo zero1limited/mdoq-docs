@@ -46,19 +46,19 @@ To read more about instance components see [here](/documentation/instance/compon
 The are many things you can do with an instance, once you have selected if from the left hand side of the Mdoq UI (it will be highlighted blue in the list), instance specific information and actions will be 
 shown across the rest of the page.  
 Towards the top of the instance information will be the actions available for the selected instance. The actions available are:  
-- Settings  
+- *Settings*  
   This is where the instance can be configured as needed, each component of an instance has it's own sub section of settings to read more about these see [here](/documentation/instance/components.html)  
-- Links
+- _Links_  
   This dialog shows the urls available to for the selected instance, if a live instance is selected, it will show the urls for the live instance.
-- Sync
+- Sync  
   This dialog shows the components that can be recreated for the instance, these components have a wide array of functionality, see [here](#instance-components) for more information.
 - Tool Belt
   This dialog show the actions that can be carried out on an instance, see [here](/documentation/instance/tool-belt.html) for more information.  
-- Github
+- Github  
   This dialog enables automation of common git actions need when developing on an instance see [here](/documentation/instance/github.html) for more information.
-- Monitoring
+- Monitoring  
   This dialog show the status of (if enabled) the Mdoq monitoring for the instance, see [here](/documentation/instance/monitoring.html) for more information.
-- Support
+- Support  
   This dialog give access to useful set of tools, commonly required by a developer, see [here](/documentation/instance/support.html) for more information.
 - Delete  
   Clicking this will allow you to delete the instance. When opening the dialog a couple of checks will start to run: 
