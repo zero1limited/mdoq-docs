@@ -26,16 +26,6 @@ This should then re-run the composer install and apply the patches.
 
 #Check the patches are applying
 
-In order to verify 100% that the patches have applied, you need to check the patches are installed. Please load the Repo 
-https://github.com/zero1limited/magento2-patches/blob/master/patches.json
+In order to verify 100% that the patches have applied, you can check the log files in your instance. Pleaes review the animation below which illustrates one patch applied successfully and one patch failing. If you get 'Could not apply patch!' you will need to escalate your issue to a developer.
 
-With the patches.json open please search it for the name of the patch you have just applied as denoted in the above commands after the --patch=
-
-Please also find the version of Magento you are running by entering the SSH Web Console and typing `php bin/magento -V`
-
-When you have located the patch and your Magento version, you should be able to locate a base_dir value, use this to navigate to the relevant patch folder.
-
-
-
-
-Done! You are now ready to Deploy!
+If you did not receive any patch errors, you are  ready to Deploy!
