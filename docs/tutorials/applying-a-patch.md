@@ -20,7 +20,7 @@ composer install
 ```
 
 3. Click Github - Git Push - Select only the composer.json, composer.lock & app/etc/config.php files
-4. Click Sync - Files - recreate the instance
+4. Click Sync - Files - recreate the instance selecting only 'Code' when recreating
 
 This should then re-run the composer install and apply the patches.
 
