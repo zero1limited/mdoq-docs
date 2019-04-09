@@ -60,7 +60,7 @@ Towards the top of the instance information will be the actions available for th
   This dialog show the status of (if enabled) the Mdoq monitoring for the instance, see [here](/documentation/instance/monitoring.html) for more information.
 - Support
   This dialog give access to useful set of tools, commonly required by a developer, see [here](/documentation/instance/support.html) for more information.
-- Delete
+- Delete  
   Clicking this will allow you to delete the instance. When opening the dialog a couple of checks will start to run: 
   - Check if this branch is ahead of master. (if this is the case, you may wish to keep your git branch, see below)  
   - Check if there are any uncommitted changes.  
