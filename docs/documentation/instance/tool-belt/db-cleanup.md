@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DB Cleanup
+title: DB Size Report
 description: A job to analyze table sizes within your DB
 section: tool-belt
 availability:
@@ -16,5 +16,6 @@ availability:
 
 # {{ page.title }}
 {{ page.description }}
+The blah and the db is cool.
 
 {%- include availability-table.html -%}
