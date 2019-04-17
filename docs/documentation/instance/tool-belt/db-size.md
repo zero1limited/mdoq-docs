@@ -21,4 +21,6 @@ This SAK job allows you to see how much disk space is being taken up by each tab
 
 Tables that are using less than 1MB of disk space are ignored.
 
+<img src="/assets/img/db-report.jpg" alt="MDOQ Database Report" />
+
 {%- include availability-table.html -%}
