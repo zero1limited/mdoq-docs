@@ -9,9 +9,9 @@ availability:
       staging: true
       development: true
     m2:
-      live: false
-      staging: false
-      development: false
+      live: true
+      staging: true
+      development: true
 ---
 
 # {{ page.title }}
