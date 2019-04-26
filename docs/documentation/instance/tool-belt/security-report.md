@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 
+title: Security Report
 description: A job to create a basic security report from your site.
 section: tool-belt
 availability:
