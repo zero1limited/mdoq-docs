@@ -23,8 +23,6 @@ Changing your admin path regularly is best practice when it comes to security. W
 
 In addition to changing the admin path, it also emails all admin users with the updated path so you don't have to worry about letting everyone know.
 
-<img src="/assets/img/reset-admin-path-1.jpg" alt="MDOQ Reset Admin Path" />
-<img src="/assets/img/reset-admin-path-2.jpg" alt="MDOQ Reset Admin Path" />
-<img src="/assets/img/reset-admin-path-3.jpg" alt="MDOQ Reset Admin Path" />
+<img src="/assets/img/reset_admin_full.jpg" alt="MDOQ Reset Admin Path" />
 
 {%- include availability-table.html -%}
