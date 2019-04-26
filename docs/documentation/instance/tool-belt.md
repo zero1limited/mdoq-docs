@@ -13,6 +13,7 @@ availability:
       live: true
       staging: true
       development: true
+priority: 50
 ---
 
 # {{ page.title }}

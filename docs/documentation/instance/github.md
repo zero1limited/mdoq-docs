@@ -3,6 +3,7 @@ layout: default
 title: Github
 description: What the the Mdoq github dialog can do
 section: instance
+priority: 40
 ---
 
 # {{ page.title }}

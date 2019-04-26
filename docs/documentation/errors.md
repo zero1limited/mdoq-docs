@@ -3,7 +3,6 @@ layout: default
 title: Common Errors
 description: Index of common Mdoq errors.
 section: documentation
-sub_section: errors
 priority: 10
 ---
 

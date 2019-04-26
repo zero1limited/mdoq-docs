@@ -3,6 +3,7 @@ layout: default
 title: Support
 description: A description of the support dialog
 section: instance
+priority: 20
 ---
 
 # {{ page.title }}

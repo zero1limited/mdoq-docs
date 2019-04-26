@@ -32,7 +32,8 @@
                             <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
                                 {% if p.sub_section %}
                             <ul class="list-group section-{{ p.sub_section }}">
-                                    {% for subPage in site.html_pages %}
+                                    {% assign sortedSubPages = (site.html_pages | sort:"priority" | reverse) %}
+                                    {% for subPage in sortedSubPages %}
                                         {% if subPage.section == p.sub_section %}
                                 <li class="list-group-item">
                                     <a href="{{ subPage.url }}" {% if subPage.url == page.url %}class="active"{% endif %}>{{ subPage.title }}</a>
