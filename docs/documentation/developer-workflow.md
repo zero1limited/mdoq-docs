@@ -126,7 +126,7 @@ in their infancy. We would be more then happy to help you use them so we can imp
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td class="ticked"></td>
     </tr>
     </tbody>
 </table>
