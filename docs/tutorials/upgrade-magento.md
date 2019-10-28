@@ -14,7 +14,11 @@ Depending on the Major version of Magento you are upgrading to, you need to comp
 
 ### Upgrading Magento 1 Community Edition
 
-Please note that this will only work when you are upgrading to the latest available version of Magento 1. Type
+With MDOQ > Support > Code Editor view  app/etc/modules/Cm_RedisSession.xml and ensure the <active> tag contains true NOT false
+
+Please note that this will only work when you are upgrading to the latest available version of Magento 1. Type the following into 
+
+* MDOQ > Support > SSH Web Console
 
 ```
 chmod +x ./mage; ./mage mage-setup; ./mage sync; ./mage sync-pear; ./mage config-set preferred_state stable
@@ -23,7 +27,6 @@ chmod +x ./mage; ./mage mage-setup; ./mage sync; ./mage sync-pear; ./mage config
 
 - Look out for any 'failed to delete' or permission issues. You can delete any files manually by doing rm -r [file here] -
 - Example: rm -r /var/package/blah.pkg -
-- If you see any errors like 'Package blah conflicts with: blah', this can be ignored -
 
 chmod +x ./mage;
 ./mage upgrade-all --force
@@ -32,9 +35,7 @@ chmod +x ./mage;
 
 ### Upgrading Magento 2 Open Source
 
-With MDOQ > Support > Code Editor view  app/etc/modules/Cm_RedisSession.xml and ensure the <active> tag contains true NOT false
-
-MDOQ > Support > Code Editor
+* MDOQ > Support > Code Editor
 Edit the composer.json file and update the version after magento/product-community-edition to the latest minor version number
 Edit the .gitignore file ensuring there is a line containing `/setup`
 
@@ -59,4 +60,4 @@ Ensure the output from the last command states the version number you have just 
 
 When the upgrade has completed you need to push the code changes with:
 
-l. _MDOQ > GitHub > Git Push_
+* __MDOQ > GitHub > Git Push__
