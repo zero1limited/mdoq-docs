@@ -21,12 +21,16 @@ Please note that this will only work when you are upgrading to the latest availa
 * MDOQ > Support > SSH Web Console
 
 ```
-chmod +x ./mage; ./mage mage-setup; ./mage sync; ./mage sync-pear; ./mage config-set preferred_state stable
+chmod +x ./mage; 
+./mage mage-setup; 
+./mage sync; 
+./mage sync-pear; 
+./mage config-set preferred_state stable
 ./mage list-upgrades
 ./mage install http://connect20.magentocommerce.com/community Mage_All_Latest --force;
 
 - Look out for any 'failed to delete' or permission issues. You can delete any files manually by doing rm -r [file here] -
-- Example: rm -r /var/package/blah.pkg -
+- Example: rm -r ./var/package/blah.pkg -
 
 chmod +x ./mage;
 ./mage upgrade-all --force
