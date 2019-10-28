@@ -62,6 +62,11 @@ Take note of the modules you removed from the composer.json file.
 You need to find updated versions of these modules and install them after the upgrade.
 Ensure the output from the last command states the version number you have just upgraded to.
 
+### Committing your upgrade to Source Control
+
+
 When the upgrade has completed you need to push the code changes with:
 
 * __MDOQ > GitHub > Git Push__
+
+You can then continue with the standard process Eg. `I'm Done`
