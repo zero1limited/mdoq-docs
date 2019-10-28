@@ -38,17 +38,20 @@ MDOQ > Support > Code Editor
 Edit the composer.json file and update the version after magento/product-community-edition to the latest minor version number
 Edit the .gitignore file ensuring there is a line containing `/setup`
 
+```
 rm -Rf setup
 composer update magento/product-community-edition --no-dev --with-dependencies
 php bin/magento setup:upgrade
 php bin/magento deploy:mode:set production
 php bin/magento -V
-
+```
 If the composer command fails for any reason check the error message for a 3rd party module name, i.e. a non Magento package. If you find a non-magento module in the error message please do the following:
 
 Remove the troublesome module from the composer.json file.
+```
 rm composer.lock
 mv vendor vendor_preupgrade
+```
 Start the process again, starting with the composer command that failed before.
 Take note of the modules you removed from the composer.json file.
 You need to find updated versions of these modules and install them after the upgrade.
@@ -56,4 +59,4 @@ Ensure the output from the last command states the version number you have just 
 
 When the upgrade has completed you need to push the code changes with:
 
-• MDOQ > GitHub > Git Push
+l. _MDOQ > GitHub > Git Push_
