@@ -6,7 +6,7 @@ description: How to upgrade your magento site
 
 # {{ page.title }}
 
-With MDOQ you can easily upgrade your Magento version. We boast to have an upgrade time of under 1 minute. Watch our quick tutorial video to see how to upgrade your instance now!
+With MDOQ you can easily upgrade your Magento version.
 
 To upgrade Magento on MDOQ you will need a instance. If you don't know how to roll up an instance click [here](/tutorials/create-a-new-istance.html). 
 
@@ -15,7 +15,6 @@ Depending on the Major version of Magento you are upgrading to, you need to comp
 ### Upgrading Magento 1 Community Edition
 
 Please note that this will only work when you are upgrading to the latest available version of Magento 1. Type
-
 
 ```
 chmod +x ./mage; ./mage mage-setup; ./mage sync; ./mage sync-pear; ./mage config-set preferred_state stable
@@ -35,7 +34,6 @@ chmod +x ./mage;
 
 With MDOQ > Support > Code Editor view  app/etc/modules/Cm_RedisSession.xml and ensure the <active> tag contains true NOT false
 
-Magento 2
 MDOQ > Support > Code Editor
 Edit the composer.json file and update the version after magento/product-community-edition to the latest minor version number
 Edit the .gitignore file ensuring there is a line containing `/setup`
@@ -45,6 +43,7 @@ composer update magento/product-community-edition --no-dev --with-dependencies
 php bin/magento setup:upgrade
 php bin/magento deploy:mode:set production
 php bin/magento -V
+
 If the composer command fails for any reason check the error message for a 3rd party module name, i.e. a non Magento package. If you find a non-magento module in the error message please do the following:
 
 Remove the troublesome module from the composer.json file.
@@ -56,4 +55,5 @@ You need to find updated versions of these modules and install them after the up
 Ensure the output from the last command states the version number you have just upgraded to.
 
 When the upgrade has completed you need to push the code changes with:
-MDOQ > GitHub > Git Push
+
+• MDOQ > GitHub > Git Push
