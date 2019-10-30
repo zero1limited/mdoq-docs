@@ -27,4 +27,4 @@ This will start the SSH container and once available you will be able to SSH int
 Once the instance has restarted if you revisit the SSH tab of the settings popup there will be a value
 in the host field. This is in the format of instance-domain:port-number so simply replace these values in the above command to SSH into your container
 
-If you are unsure how to generate SSH keys on different environments you might find ![this article useful on GitHub](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+If you are unsure how to generate SSH keys on different environments you might find [this article useful on GitHub](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
