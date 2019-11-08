@@ -41,13 +41,13 @@ Please [get in touch](maxilto:{{ site.email}})
     <tbody>
     <tr>
         <th scope="row">Magento 2</th>
-        <td>[Option 1](#magento-2-single-server-connector-setup)</td>
-        <td>[Option 2](#magento-2-multi-server-connector-setup)</td>
+        <td><a href="#magento-2-single-server-connector-setup">Option 1</a></td>
+        <td><a href="#magento-2-multi-server-connector-setup">Option 2</a></td>
     </tr>
     <tr>
         <th scope="row">Magento 1</th>
-        <td>[Option 3](#magento-1-single-server-connector-setup)</td>
-        <td>[Option 4](#magento-1-multi-server-connector-setup)</td>
+        <td><a href="#magento-1-single-server-connector-setup">Option 3</a></td>
+        <td><a href="#magento-1-multi-server-connector-setup">Option 4</a></td>
     </tr>
     </tbody>
 </table>
