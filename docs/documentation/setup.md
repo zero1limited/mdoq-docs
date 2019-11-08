@@ -30,11 +30,27 @@ The connector is just a simple extension that can be install via composer.
 Please [get in touch](maxilto:{{ site.email}})
 
 ## Connector Setup
-| Platform | Use Mdoq for deployments | Don't use Mdoq for deployments |
-|---|---|---|
-| Magento 2 | [Option 1](#magento-2-single-server-connector-setup) | [Option 2](#magento-2-multi-server-connector-setup) |
-| Magento 1 | [Option 3](#magento-1-single-server-connector-setup) | [Option 4](#magento-1-multi-server-connector-setup) |
-
+<table class="table availability">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Platform</th>
+        <th scope="col">Use Mdoq for deployments</th>
+        <th scope="col">Don't use Mdoq for deployments</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Magento 2</th>
+        <td>[Option 1](#magento-2-single-server-connector-setup)</td>
+        <td>[Option 2](#magento-2-multi-server-connector-setup)</td>
+    </tr>
+    <tr>
+        <th scope="row">Magento 1</th>
+        <td>[Option 3](#magento-1-single-server-connector-setup)</td>
+        <td>[Option 4](#magento-1-multi-server-connector-setup)</td>
+    </tr>
+    </tbody>
+</table>
 
 ### Magento 2 Single Server Connector Setup
 1. Navigate to Stores > Configuration > Services > Mdoq Connector
