@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.mdoq.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jekyll
 error_mode: strict
-
+mdoq_ip: 91.121.169.206
 # Build settings
 markdown: kramdown
 plugins:

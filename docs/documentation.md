@@ -15,6 +15,8 @@ If at any point when using Mdoq, you have a question you can't find the answer t
 If you're looking to get started with Mdoq we suggest you start with the [Quick Tutorials](/tutorials.html) these will give you a flavour of the functionality Mdoq provides.  
 If you have watched them, or you are looking for more specific information this is the right place!  
 
+- [Initial Installation / Setup](/documentation/setup.html)  
+  Learn how to configure your Mdoq connector so Mdoq can talk to your site.
 - [Deployment Process](/documentation/deployment-process.html)  
   Learn more about how Mdoq gets your work live and how it enables truly concurrent development and testing of your Magento site.
 - [Developer Workflow](/documentation/developer-process.html)  
