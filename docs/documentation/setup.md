@@ -78,6 +78,8 @@ You should see the message:
   You should then see the output of PHP info.
 
 ### Magento 2 Multi-Server Connector Setup
+_N.B:_ using this method requires Advanced > Admin > Security > Add Secret Key to URLs being turned off  
+  
 1. Navigate to Stores > Configuration > Services > Mdoq Connector
 2. Select "Yes" for "Enable MDOQ Connector"
 3. Select "Yes" for "Enable Access from Admin"
