@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Post Roll Up Actions Component
-description: Description of the post roll up actions component component
+description: Description of the post roll up actions component
 section: instance_components
 ---
 
