@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Code Component
-description: Description of the code component
+title: NodeJs Component
+description: Description of the NodeJs component
 section: instance_components
 ---
 
