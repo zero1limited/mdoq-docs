@@ -1,0 +1,29 @@
+{% if page.platforms %}
+## Platforms
+<table class="table platforms">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Platform</th>
+        <th scope="col">Available</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Magento 1</th>
+        <td {% if page.platforms.m1 == true %}ckass="ticked"{% endif %}></td>
+    </tr>
+    <tr>
+        <th scope="row">Magento 2</th>
+        <td {% if page.platforms.m2 == true %}ckass="ticked"{% endif %}></td>
+    </tr>
+    <tr>
+        <th scope="row">Vue Storefront Backend</th>
+        <td {% if page.platforms.vsfB == true %}ckass="ticked"{% endif %}></td>
+    </tr>
+    <tr>
+        <th scope="row">Vue Storefront Frontend</th>
+        <td {% if page.platforms.vsfF == true %}ckass="ticked"{% endif %}></td>
+    </tr>
+    </tbody>
+</table>
+{% endif %}
