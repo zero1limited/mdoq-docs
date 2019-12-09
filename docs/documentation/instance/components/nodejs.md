@@ -74,11 +74,11 @@ To change the `host` value to `localhost` you would pass in `-e VSF_SERVER_HOST=
 </tr>
     <tr>
         <td>ecosystem.json</td>
-        <td>{% raw %}`{{:}}`{% endraw %}</td>
-        <td>{% raw %}```json
-        "max_memory_restart": "{{ .Env.PM2_MAX_MEMORY_RESTART }}",
+        <td>`{% raw %}{{:}}{% endraw %}`</td>
+        <td>```json
+        "max_memory_restart": {% raw %}"{{ .Env.PM2_MAX_MEMORY_RESTART }}"{% endraw %},
         ```  
-        To change the `max_memory_restart` value to `1G` you would pass in `-e PM2_MAX_MEMORY_RESTART=1G`{% endraw %}</td>
+        To change the `max_memory_restart` value to `1G` you would pass in `-e PM2_MAX_MEMORY_RESTART=1G`</td>
     </tr>
     <tr>
         <td rowspan="2">VSF Frontend</td>
