@@ -10,7 +10,6 @@ section: instance_components
 
 ## Settings
 
-
 ## Recreation
 
 ## Deploying Images On Your Own Infra
@@ -29,6 +28,27 @@ There are many ENV variables you can pass to your image, as well as others you c
 The image will automatically run [Dockerize](https://github.com/jwilder/dockerize) when starting up.
   
 ### Files modified by env variables
+ENV VS_ENV prod
+ENV MDOQ_ENV prod
+ENV NODE_CONFIG_ENV docker
+ENV PM2_ARGS ""
+
+ENV DOCKERIZE_VERSION v0.6.1
+
+ENV PM2_INSTANCES 0
+ENV PM2_MAX_MEMORY_RESTART 1G
+
+ENV VSF_SERVER_HOST localhost
+ENV VSF_SERVER_PORT 3000
+ENV VSF_REDIS_HOST localhost
+ENV VSF_REDIS_PORT 6379
+ENV VSF_REDIS_DB 0
+ENV VSF_GRAPHQL_HOST localhost
+ENV VSF_GRAPHQL_PORT 8080
+ENV VSF_BACKEND_API "http://localhost:8080"
+ENV VSF_ELASTICSEARCH_HOST 9300
+ENV VSF_ELASTICSEARCH_INDEX vue_storefront
+
 <table class="table env-effected-files">
     <thead class="thead-dark">
     <tr>
@@ -43,7 +63,7 @@ The image will automatically run [Dockerize](https://github.com/jwilder/dockeriz
         <td rowspan="2">VSF Backend</td>
         <td>config/local.json</td>
         <td>`<%:%>`</td>
-        <td>```json
+        <td>```
 "server": {
     "host": "<% .Env.VSF_SERVER_HOST %>",
     "port": "<% .Env.VSF_SERVER_PORT %>",
