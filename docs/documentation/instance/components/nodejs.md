@@ -49,10 +49,6 @@ ENV VSF_BACKEND_API "http://localhost:8080"
 ENV VSF_ELASTICSEARCH_HOST 9300
 ENV VSF_ELASTICSEARCH_INDEX vue_storefront
 
-```json
-"max_memory_restart": {% raw %}"{{ .Env.PM2_MAX_MEMORY_RESTART }}"{% endraw %},
-```  
-
 <table class="table env-effected-files">
     <thead class="thead-dark">
     <tr>
@@ -66,44 +62,44 @@ ENV VSF_ELASTICSEARCH_INDEX vue_storefront
     <tr>
         <td rowspan="2">VSF Backend</td>
         <td>config/local.json</td>
-        <td>`<%:%>`</td>
-<td>```
+        <td><code class="language-plaintext highligher-rouge"><%:%></code></td>
+<td><code class="language-json highligher-rouge">
 "server": {
     "host": "<% .Env.VSF_SERVER_HOST %>",
     "port": "<% .Env.VSF_SERVER_PORT %>",
     "searchEngine": "elasticsearch"
 },
-```  
-To change the `host` value to `localhost` you would pass in `-e VSF_SERVER_HOST=localhost`</td>
+</code><br />
+To change the <code class="language-plaintext highligher-rouge">host</code> value to <code class="language-plaintext highligher-rouge">localhost</code> you would pass in <code class="language-plaintext highligher-rouge">-e VSF_SERVER_HOST=localhost</code></td>
 </tr>
     <tr>
         <td>ecosystem.json</td>
         <td><code class="language-plaintext highligher-rouge">{% raw %}{{:}}{% endraw %}</code></td>
-        <td>```json
+        <td><code class="language-json highligher-rouge">
         "max_memory_restart": {% raw %}"{{ .Env.PM2_MAX_MEMORY_RESTART }}"{% endraw %},
-        ```  
-        To change the `max_memory_restart` value to `1G` you would pass in `-e PM2_MAX_MEMORY_RESTART=1G`</td>
+        </code><br />
+        To change the <code class="language-plaintext highligher-rouge">max_memory_restart</code> value to <code class="language-plaintext highligher-rouge">1G</code> you would pass in <code class="language-plaintext highligher-rouge">-e PM2_MAX_MEMORY_RESTART=1G</code></td>
     </tr>
     <tr>
         <td rowspan="2">VSF Frontend</td>
         <td>config/local.json</td>
-        <td>`<%:%>`</td>
-        <td>```json
+        <td><code class="language-plaintext highligher-rouge"><%:%></code></td>
+        <td><code class="language-json highligher-rouge">
         "server": {
                 "host": "<% .Env.VSF_SERVER_HOST %>",
                 "port": "<% .Env.VSF_SERVER_PORT %>",
                 "searchEngine": "elasticsearch"
             },
-        ```  
-        To change the `host` value to `localhost` you would pass in `-e VSF_SERVER_HOST=localhost`</td>
+        </code><br />
+        To change the <code class="language-plaintext highligher-rouge">host</code> value to <code class="language-plaintext highligher-rouge">localhost</code> you would pass in <code class="language-plaintext highligher-rouge">-e VSF_SERVER_HOST=localhost</code></td>
     </tr>
     <tr>
         <td>ecosystem.json</td>
-        <td>`{{:}}`</td>
-        <td>```json
+        <td><code class="language-plaintext highligher-rouge">{{:}}</code></td>
+        <td><code class="language-json highligher-rouge">
         "max_memory_restart": "{{ .Env.PM2_MAX_MEMORY_RESTART }}",
-        ```  
-        To change the `max_memory_restart` value to `1G` you would pass in `-e PM2_MAX_MEMORY_RESTART=1G`</td>
+        </code><br />
+        To change the <code class="language-plaintext highligher-rouge">max_memory_restart</code> value to <code class="language-plaintext highligher-rouge">1G</code> you would pass in <code class="language-plaintext highligher-rouge">-e PM2_MAX_MEMORY_RESTART=1G</code></td>
     </tr>
     </tbody>
 </table>
