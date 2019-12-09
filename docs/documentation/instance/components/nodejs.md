@@ -28,27 +28,6 @@ There are many ENV variables you can pass to your image, as well as others you c
 The image will automatically run [Dockerize](https://github.com/jwilder/dockerize) when starting up.
   
 ### Files modified by env variables
-ENV VS_ENV prod
-ENV MDOQ_ENV prod
-ENV NODE_CONFIG_ENV docker
-ENV PM2_ARGS ""
-
-ENV DOCKERIZE_VERSION v0.6.1
-
-ENV PM2_INSTANCES 0
-ENV PM2_MAX_MEMORY_RESTART 1G
-
-ENV VSF_SERVER_HOST localhost
-ENV VSF_SERVER_PORT 3000
-ENV VSF_REDIS_HOST localhost
-ENV VSF_REDIS_PORT 6379
-ENV VSF_REDIS_DB 0
-ENV VSF_GRAPHQL_HOST localhost
-ENV VSF_GRAPHQL_PORT 8080
-ENV VSF_BACKEND_API "http://localhost:8080"
-ENV VSF_ELASTICSEARCH_HOST 9300
-ENV VSF_ELASTICSEARCH_INDEX vue_storefront
-
 <table class="table env-effected-files">
     <thead class="thead-dark">
     <tr>
@@ -213,8 +192,73 @@ The rule of thumb is: "If it should change per environment use environment varia
         <td>VSF_MAGENTO2_API_ACCESSTOKEN_SECRET</td>
         <td>[CHANGE ME]</td>
     </tr>
+    <tr>
+        <td rowspan="16">VSF Backend</td>
+        <td>VS_ENV</td>
+        <td>prod</td>
+    </tr>
+    <tr>
+        <td>MDOQ_ENV</td>
+        <td>prod</td>
+    </tr>
+    <tr>
+        <td>NODE_CONFIG_ENV</td>
+        <td>docker</td>
+    </tr>
+    <tr>
+        <td>PM2_ARGS</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PM2_INSTANCES</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>PM2_MAX_MEMORY_RESTART</td>
+        <td>1G</td>
+    </tr>
+    <tr>
+        <td>VSF_SERVER_HOST</td>
+        <td>localhost</td>
+    </tr>
+    <tr>
+        <td>VSF_SERVER_PORT</td>
+        <td>3000</td>
+    </tr>
+    <tr>
+        <td>VSF_REDIS_HOST</td>
+        <td>localhost</td>
+    </tr>
+    <tr>
+        <td>VSF_REDIS_PORT</td>
+        <td>6379</td>
+    </tr>
+    <tr>
+        <td>VSF_REDIS_DB</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>VSF_GRAPHQL_HOST</td>
+        <td>localhost</td>
+    </tr>
+    <tr>
+        <td>VSF_GRAPHQL_PORT</td>
+        <td>8080</td>
+    </tr>
+    <tr>
+        <td>VSF_BACKEND_API</td>
+        <td>http://localhost:8080</td>
+    </tr>
+    <tr>
+        <td>VSF_ELASTICSEARCH_HOST</td>
+        <td>9300</td>
+    </tr>
+    <tr>
+        <td>VSF_ELASTICSEARCH_INDEX</td>
+        <td>vue_storefront</td>
+    </tr>
+    </tbody>
 </table>
-
 
 ## Platforms
 <table class="table platforms">
