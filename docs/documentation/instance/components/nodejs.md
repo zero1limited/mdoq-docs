@@ -63,7 +63,7 @@ ENV VSF_ELASTICSEARCH_INDEX vue_storefront
         <td rowspan="2">VSF Backend</td>
         <td>config/local.json</td>
         <td>`<%:%>`</td>
-        <td>```
+<td>```
 "server": {
     "host": "<% .Env.VSF_SERVER_HOST %>",
     "port": "<% .Env.VSF_SERVER_PORT %>",
@@ -71,7 +71,7 @@ ENV VSF_ELASTICSEARCH_INDEX vue_storefront
 },
 ```  
 To change the `host` value to `localhost` you would pass in `-e VSF_SERVER_HOST=localhost`</td>
-    </tr>
+</tr>
     <tr>
         <td>ecosystem.json</td>
         <td>`{{:}}`</td>
