@@ -49,6 +49,10 @@ ENV VSF_BACKEND_API "http://localhost:8080"
 ENV VSF_ELASTICSEARCH_HOST 9300
 ENV VSF_ELASTICSEARCH_INDEX vue_storefront
 
+```json
+"max_memory_restart": {% raw %}"{{ .Env.PM2_MAX_MEMORY_RESTART }}"{% endraw %},
+```  
+
 <table class="table env-effected-files">
     <thead class="thead-dark">
     <tr>
@@ -74,7 +78,7 @@ To change the `host` value to `localhost` you would pass in `-e VSF_SERVER_HOST=
 </tr>
     <tr>
         <td>ecosystem.json</td>
-        <td>`{% raw %}{{:}}{% endraw %}`</td>
+        <td><code class="language-plaintext highligher-rouge">{% raw %}{{:}}{% endraw %}</code></td>
         <td>```json
         "max_memory_restart": {% raw %}"{{ .Env.PM2_MAX_MEMORY_RESTART }}"{% endraw %},
         ```  
