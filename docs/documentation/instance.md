@@ -13,6 +13,16 @@ This page explains what "instances" are, what they are made of and how they are 
 - [What Are "instances"](#what-are-instances)
 - [Instance Types](#instance-types)
 - [Instance Components](#instance-components)
+- [Instance Platforms](#instance-platforms)
+  - [Magento 1](#magento-1)
+  - [Magento 2](#magento-2)
+  - [Vue Storefront Backend](#vue-storefront-backend)
+  - [Vue Storefront Frontend](#vue-storefront-frontend)
+- [How To Create Instances](#how-to-create-instances)
+  - [Magento 1](#creating-magento-1)
+  - [Magento 2](#creating-magento-2)
+  - [Vue Storefront Backend](#creating-vue-storefront-backend)
+  - [Vue Storefront Frontend](#creating-vue-storefront-frontend)
 - [What Can I Do With An Instance](#what-can-i-do-with-an-instance)
 - [Common Questions](#common-questions)
 
@@ -41,6 +51,71 @@ Because of their differing roles, each instance type has different actions and a
 Instances are made up of many components, each component takes responsibility of it's own set of tasks needed to provide the full Mdoq functionality.  
 Each component has its own configuration, the configuration of all instances inherited from the live instance it is created from. Though this configuration can be modified as needed.  
 To read more about instance components see [here](/documentation/instance/components.html).
+
+## Instance Platforms
+Mdoq supports 4 different platforms; Magento 1, Magento 2, Vue Storefront Backend, Vue Storefront Frontend. 
+Each platform uses different components as they need different technologies, to run correctly. 
+
+### Magento 1
+This platform runs with the following technologies:
+- Nginx
+- Php-Fpm
+- Mysql
+- Redis (if enabled)
+
+### Magento 2
+This platform runs with the following technologies:
+- Nginx
+- Php-Fpm
+- Mysql
+- Redis (if enabled)
+
+### Vue Storefront Backend
+This platform runs with the following technologies:
+- Nginx
+- NodeJs
+- Redis
+- Elastic Search
+
+Because of how Vue storefront works, creating an instance requires a Magento 2 instance to link to. 
+This is where the application will pull catalog and product data and also push orders etc...  
+There can be multiple Vue Storefront Backend instances for a single Magento 2 instance.
+
+### Vue Storefront Frontend
+This platform runs with the following technologies:
+- Nginx
+- NodeJs
+
+Because of how Vue storefront works, creating an instance requires a backend instance to exist. 
+This is so the application can communicate with the backend instance to pull product & category data as well as perfrom user actions, such as adding to cart.  
+There can be multiple Vue Storefront Frontend instances for a single Vue Storefront Backend instance. 
+
+## How To Create Instances
+Creating instance is very simple. Just click the "New instance" button (top right of the screen).
+You will then be presented with a dialog of options. The options are almost identical across platforms, though because of platform specific nuances there are a few differences.
+
+*Common Options*:
+- Description: this is the human readable name of the instance
+- Ticket Number: this can be anything that allows you to be able to identify the instance. (It may only be alphanumeric with '_' and '-', if you have source control enabled it will also be the branch name)
+
+There are also "Advanced Options", these are completely optional.
+*Advanced Options*:
+- Deploy Mode: this allows you to select if you want to roll the instance up in Developer or Production mode. (The default is Production)
+- Parent Branch: this allows you to pick a source branch for your instance (useful if you are all working from a release candidate)
+
+### Creating Magento 1
+There are no Magento 1 specific options
+
+### Creating Magento 2
+There are no Magento 2 specific options
+
+### Creating Vue Storefront Backend
+*Options*: 
+- Linked instance: This is the magento 2 instance that the application will pull data from
+
+### Creating Vue Storefront Frontend
+*Options*:
+- Linked instance: This is the Vue Storefront Backend instance the application will talk to.
 
 ## What Can I Do With An Instance
 The are many things you can do with an instance, once you have selected if from the left hand side of the Mdoq UI (it will be highlighted blue in the list), instance specific information and actions will be 
