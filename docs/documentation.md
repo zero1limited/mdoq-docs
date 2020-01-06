@@ -25,4 +25,6 @@ If you have watched them, or you are looking for more specific information this 
   Become an Mdoq pro and dig into all the things you can do, and Mdoq can do for you!  
 - [Common Errors](/documentation/errors.html)  
   As with everything sometimes things don't go as expected, this can be down to a number of things. To help you deal with such occurrences Mdoq aims to give user friendly explanations and steps to 
-  resolve them.
+  resolve them.  
+- [SSH Access](/documentation/instance/support.html#ssh-console)
+  Learn how to setup and access your instances via SSH
