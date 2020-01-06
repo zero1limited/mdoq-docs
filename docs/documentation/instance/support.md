@@ -37,7 +37,7 @@ To log into the instance:
  <img style="width: 100%" src="/assets/img/web_ssh_login.JPG" alt="Web SSH Console Login" />
  3. If you created your SSH key with a passphrase you will also need to enter that.
  4. Click connect and you should be logged in.
- <img style="width: 100%" src="/assets/img/web_ssh_loged_in.JPG" alt="Web SSH Console Login" />
+ <img style="width: 100%" src="/assets/img/web_ssh_logged_in.JPG" alt="Web SSH Console Login" />
 
 ## Code Editor
 This links to a full web base IDE that allows you to view and edit files directly on the instance.
