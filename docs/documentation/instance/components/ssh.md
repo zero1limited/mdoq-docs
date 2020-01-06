@@ -18,18 +18,18 @@ availability:
 {{ page.description }}
 
 ## Settings
-As with all components, this component uses parent -> child inheritance. If you configure the settings on a live instance, all child instance will initially inherit these settings. 
+As with all components, this component uses parent -> child inheritance. If you configure the settings on a live instance, all child instances will initially inherit these settings. 
 Once the instance has rolled up you can change them as required.
 
-**N.B** Mdoq only support SSH access using SSH keys. If you are unsure what an ssh key is or how to generate Github have some great documentation, see [here](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+**N.B** Mdoq only support SSH access using SSH keys. If you are unsure what an ssh key is or how to generate one, Github have some great documentation, see [here](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
 
 - **Enable**  
   Whether SSH should be enabled on development instances. *this will not enable SSH on your live site*
 - **Identities**
   This is where you can add SSH keys for your team.  
-  - name 
+  - name  
     This has no effect on ssh, it is just there to help identify keys
-  - public key 
+  - public key  
     This is the public part of your SSH key (usually ending with `.pub`, e.g: `~/.ssh/id_rsa.pub`)  
     We would recommend generating an SSH key specifically for Mdoq.  
 - **Host**  
