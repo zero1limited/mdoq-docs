@@ -14,9 +14,9 @@ After you have [created an instance](/tutorials/creating-a-new-instance.html) yo
 
 <p><img src="/assets/img/svg_1.jpg" alt="Support" /></p>
 
-•  Navigate to your theme folder. This may vary but in Magento 2 it should be in app/design/frontend/[VENDOR]/[THEME]
+•  Navigate to your theme folder. This may vary but in Magento 2 it should be in `app/design/frontend/[VENDOR]/[THEME]`
 
-•  Look for the folder within your theme called "web", this should contain another folder called "images". For example, app/design/frontend/[VENDOR]/[THEME]/web/images
+•  Look for the folder within your theme called "web", this should contain another folder called "images". For example, `app/design/frontend/[VENDOR]/[THEME]/web/images`
 
 •  Right click the images folder and select "Upload Files"
 
@@ -26,4 +26,4 @@ After you have [created an instance](/tutorials/creating-a-new-instance.html) yo
 
 •  Visit the frontend of the instance to check if the logo is appearing. If there is another image uploaded via the admin (Content -> Design Configuration) this will overwrite the SVG file that sits in the theme folder so remove this if required.
 
-•  [Merge and deploy your changes] (/tutorials/deploy-code.html)
+•  [Merge and deploy your changes](/tutorials/deploy-code.html)
