@@ -12,7 +12,7 @@ After you have [created an instance](/tutorials/creating-a-new-instance.html) yo
 
 2. Select the code editor from within the "Support" area (choose the white button to open it fullscreen)
 
-<img src="/assets/img/svg_1.jpg" alt="Support" />
+<div><img src="/assets/img/svg_1.jpg" alt="Support" /></div>
 
 3. Navigate to your theme folder. This may vary but in Magento 2 it should be in app/design/frontend/[VENDOR]/[THEME]
 
