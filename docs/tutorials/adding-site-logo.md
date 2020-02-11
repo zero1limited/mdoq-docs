@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Adding a SVG Logo
-description: How to add a SVG logo to your instance
+title: Setting up your SVG Logo
+description: How to add your SVG logo to an instance
 ---
 
 # {{ page.title }}
