@@ -3,7 +3,7 @@ layout: default
 title: Setup
 description: A guide to getting started on Mdoq 
 section: documentation
-priority: 90
+priority: 10
 ---
 
 # {{ page.title }}
