@@ -3,7 +3,7 @@ layout: default
 title: Account
 description: A guide to your MDOQ Account 
 section: documentation
-priority: 200
+priority: 2
 ---
 
 # {{ page.title }}
