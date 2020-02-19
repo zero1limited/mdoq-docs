@@ -18,7 +18,7 @@ After you have [created an instance](/tutorials/creating-a-new-instance.html) yo
 
 •  Look for the folder within your theme called "web", this should contain another folder called "images". For example, `app/design/frontend/[VENDOR]/[THEME]/web/images`
 
-•  Right click the images folder and select "Upload Files"
+•  Ensuring your logo is named 'logo.png', right-click the images folder and select "Upload Files"
 
 •  Drag and drop your .svg image here
 
