@@ -1,14 +1,20 @@
 ---
 layout: default
-title: Add your SVG Logo
-description: How to add your SVG logo to an instance
+title: How to add your logo in SVG format
+description: How to add your logo in SVG format
 ---
 
 # {{ page.title }}
 
-After you have [created an instance](/tutorials/creating-a-new-instance.html) you may want to add a SVG format logo to your theme to ensure new instances roll up looking close to your live website without the need for full media backups.
+The SVG image format has many benefits, including small file sizes and full scalability whilst maintaining a high quality. 
+
+Magento admin does not allow SVG files to be uploaded in the admin theme configuration area, but by utilising MDOQ you can easily upload your logo in this format. 
+
+• [Create an instance](/tutorials/creating-a-new-instance.html)
 
 • Create or acquire your logo in SVG format
+
+• Name the file `logo.svg`
 
 • Select the code editor from within the "Support" area (choose the white button to open it fullscreen)
 
@@ -20,10 +26,10 @@ After you have [created an instance](/tutorials/creating-a-new-instance.html) yo
 
 •  Ensuring your logo is named 'logo.png', right-click the images folder and select "Upload Files"
 
-•  Drag and drop your .svg image here
+•  Drag and drop your `logo.svg` image here
 
 <p><img src="/assets/img/svg_3.jpg" alt="Support" /></p>
 
-•  Visit the frontend of the instance to check if the logo is appearing. If there is another image uploaded via the admin (Content -> Design Configuration) this will overwrite the SVG file that sits in the theme folder so remove this if required.
+•  Visit the frontend of the instance to check if the logo is appearing. If there is another image uploaded via the admin (Content -> Design Configuration -> Header) this will overwrite the SVG file that sits in the theme folder so remove this if required.
 
-•  [Merge and deploy your changes](/tutorials/deploy-code.html)
+•  [Merge and deploy your changes](/tutorials/deploy-code.html) and you are done!
