@@ -1,7 +1,7 @@
 ---
 layout: default
-title: How to add your logo in SVG format
-description: How to add your logo in SVG format
+title: Add your logo in SVG format
+description: Add your logo in SVG format
 ---
 
 # {{ page.title }}
